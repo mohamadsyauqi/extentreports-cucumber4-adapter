@@ -217,7 +217,7 @@ public class ExtentCucumberAdapter
     private void handleWrite(WriteEvent event) {
     	String text = event.text;
     	if (text != null && !text.isEmpty()) {
-    	    stepTestThreadLocal.get().info(text.replace("\n", "<br/>"));
+    	    stepTestThreadLocal.get().info(text);
     	}
     }
 
